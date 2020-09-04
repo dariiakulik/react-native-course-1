@@ -24,8 +24,6 @@ const App = () => {
         fontFamily: "Brush Script Std, cursive",
         textAlign: "center", color: "#7a00e0"
       }}>developer</h3>
-
-
       <a href="https://github.com/dariiakulik">
         <img style={{
           width: "30px",
@@ -36,7 +34,6 @@ const App = () => {
         }}
           src="github.png" />
       </a>
-
       <a href="https://www.linkedin.com/in/dariia-kulikova-6b48ab172">
         <img style={{
           width: "30px",
@@ -74,13 +71,13 @@ const App = () => {
         backgroundSize: "200% auto",
         boxShadow: "0 16px 32px 0 rgba(0,40,120,.35);",
         transition: ".5s",
-        "&:hover": {
-          boxShadow: "0 0 0 0 rgba(0,40,120,0)",
-          backgroundPosition: "0 0"
-        }
-      }}> Portfolio
+      }}
+        hover={{
+          backgroundPosition: "right center"
+        }}
+      > Portfolio
       </a>
-      <Link to="/aboutme" style={{
+      <a href="/aboutme" style={{
         textDecoration: "none",
         color: "white",
         position: "relative",
@@ -97,12 +94,11 @@ const App = () => {
         backgroundSize: "200% auto",
         boxShadow: "0 16px 32px 0 rgba(0,40,120,.35);",
         transition: ".5s",
-        "&:hover": {
-          boxShadow: "0 0 0 0 rgba(0,40,120,0)",
-          backgroundPosition: "0 0"
+        hover: {
+          backgroundPosition: "right center"
         }
       }}> About me
-      </Link>
+      </a>
 
 
       <a href="/#contact" style={{
@@ -122,7 +118,7 @@ const App = () => {
         backgroundSize: "200% auto",
         boxShadow: "0 16px 32px 0 rgba(0,40,120,.35);",
         transition: ".5s",
-        "&:hover": {
+        hover: {
           boxShadow: "0 0 0 0 rgba(0,40,120,0)",
           backgroundPosition: "0 0"
         }
